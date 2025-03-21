@@ -1,5 +1,6 @@
 module "vpc" {
-  source                = "../terraform-aws-vpc"
+source                = "../tf-aws-vpc"
+  # source = "https://github.com/Kishore-89-kis/tf-aws-vpc.git?ref=main"
   project_name          = var.project_name
   environment           = var.environment
   vpc_cidr              = var.vpc_cidr
